@@ -1,0 +1,9 @@
+name: MCStrike
+main: com.woxloi.mcstrike.mcstrike
+version: 0.1.0
+api-version: 1.19
+author: woxloi
+commands:
+  mcstrike:
+    description: MCStrikeのメインコマンド
+    usage: /<command>
