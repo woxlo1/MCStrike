@@ -67,6 +67,10 @@ public class BombManager {
         return bombDefused;
     }
 
+    public boolean isBombPlanted() {
+        return bombPlanted;
+    }
+    
     public void cancelBomb() {
         bombPlanted = false;
         if (task != null) task.cancel();

@@ -15,6 +15,8 @@ public class mcstrike extends JavaPlugin {
         getLogger().info("mcstrike が有効になりました！");
         this.getCommand("mcstrike").setExecutor(new com.woxloi.mcstrike.commands.StrikeCommand());
 
+        getServer().getPluginManager().registerEvents(new com.woxloi.mcstrike.listeners.BombListener(this), this);
+
         gameManager = new GameManager();
     }
 
