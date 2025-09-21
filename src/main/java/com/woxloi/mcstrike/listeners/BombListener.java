@@ -50,12 +50,13 @@ public class BombListener implements Listener {
                         // シフト5秒保持成功 → 爆弾設置 or 解除
                         var bombManager = plugin.getGameManager().getBombManager();
                         if (!bombManager.isBombExploded() && !bombManager.isBombDefused() && !bombManager.isBombPlanted()) {
-                            bombManager.plantBomb();
+                            bombManager.plantBomb(player.getLocation());
                             mcstrike.sendPrefixMessage(player, "爆弾を設置しました！");
                         } else if (bombManager.isBombPlanted()) {
                             bombManager.defuseBomb();
                             mcstrike.sendPrefixMessage(player, "爆弾を解除しました！");
                         }
+
 
                         cancel();
                         sneakTasks.remove(player);
