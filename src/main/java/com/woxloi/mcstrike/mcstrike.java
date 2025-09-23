@@ -7,7 +7,7 @@ import com.woxloi.mcstrike.game.GameManager;
 
 public class mcstrike extends JavaPlugin {
 
-    public static final String prefix = "§6[§4§lLoginBonus§6]§f";
+    public static final String prefix = "§6[§4§lMCStrike§6]§f";
     private GameManager gameManager;
 
     @Override
